@@ -182,11 +182,12 @@
   .text {
     color: white;
     font-size: 20px;
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    top: 50%;
+    top: 20%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    padding:10px;
   }
   .image {
     display: block;
@@ -196,42 +197,31 @@
     overflow: hidden;
   }
 }
-//////////////
-// .container {
-//   position: relative;
-//   // width: 50%;
-// }
-
-// .image {
-//   display: block;
-//   // width: 100%;
-//   height: auto;
-// }
-
-// .overlay {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: #008cba;
-//   overflow: hidden;
-//   // width: 100%;
-//   height: 30px;
-//   transition: 0.5s ease;
-// }
-
-// .container:hover .overlay {
-//   height: 100%;
-// }
-
-// .text {
-//   white-space: nowrap;
-//   color: white;
-//   font-size: 20px;
-//   position: absolute;
-//   overflow: hidden;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-// }
+.values{
+  margin-top: 150px;
+  color:#fff;
+  h1{color:#fff;
+  font-size:60px}
+  .value-item{
+    padding:0px 50px;
+    img{
+      height:270px;
+      // object-fit: cover;
+      border-radius: 100%;
+    }
+    h2{
+      font-size:50px;
+      text-align: center;
+      margin-top:50px;
+    }
+    p{
+      font-size:25px;
+      margin-top: 40px;
+      padding:30px;
+      font-family: freightMI;
+    }
+  }
+    hr {
+      color: #fff;
+    }
+}
