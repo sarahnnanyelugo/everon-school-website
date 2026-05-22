@@ -1,0 +1,41 @@
+@font-face {
+  font-family: freightR;
+  src: url(./assets/fonts/freightMicro/FreightMicroProBold-Regular.ttf);
+}
+@font-face {
+  font-family: freightM;
+  src: url(./assets/fonts/freightMicro/FreightMicroProMedium-Regular.ttf);
+}
+@font-face {
+  font-family: freightMI;
+  src: url(./assets/fonts/freightMicro/FreightMicroProMedium-Italic.ttf);
+}
+@font-face {
+  font-family: freightL;
+  src: url(./assets/fonts/freightMicro/FreightMicroProLight-Regular.ttf);
+}
+@font-face {
+  font-family: freightL;
+  src: url(./assets/fonts/freightMicro/FreightMicroProLight-Regular.ttf);
+}
+@font-face {
+  font-family: polymath;
+  src: url(./assets/fonts/polymath/PolymathDisp-Black.ttf);
+}
+p,
+li {
+  font-family: freightM;
+}
+button,
+a {
+  font-family: freightR;
+}
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  font-family: polymath;
+}
