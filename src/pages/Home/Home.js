@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import "./home.scss";
 import PageLink from "./pageLink/PageLink";
+import News from "../../components/News/News";
 const colors = [
   "rgba(0, 0, 0, 0.8)",
   "rgba(128, 128, 128, 0.9)",
@@ -303,6 +304,27 @@ export const Home = () => {
               </div>
             </div>
             <hr />
+            <div className="d-md-flex value-item">
+              <div className="col-md-4">
+                <h2>GOD CENTERED</h2>
+              </div>
+              <div className="col-md-4">
+                <p>At Everon,scholarship is not confined to the classroom</p>
+              </div>{" "}
+              <div className="col-md-3 ">
+                <img src={Primary} alt="Avatar" width="90%" />
+              </div>
+            </div>
+            <hr />
+          </div>
+
+          <div className="col-md-8 offset-md-2 ">
+            <div className="testimonials">
+              <center>
+                <h2>Latest Updates</h2>
+              </center>
+              <News />
+            </div>
           </div>
         </div>
       </div>

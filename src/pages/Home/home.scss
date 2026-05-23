@@ -213,6 +213,7 @@
       font-size:50px;
       text-align: center;
       margin-top:50px;
+      border-bottom:solid 10px $highlight
     }
     p{
       font-size:25px;
@@ -224,4 +225,14 @@
     hr {
       color: #fff;
     }
+}
+
+.testimonials{
+  height:1000px;
+  background:rgb(248, 243, 236);
+  margin-top:150px;
+  padding:80px;
+ border-top-right-radius: 30px;;
+ border-top-left-radius: 30px;;
+  
 }
