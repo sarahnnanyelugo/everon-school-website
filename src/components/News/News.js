@@ -49,7 +49,7 @@ function News() {
   return (
     <>
       {" "}
-      <div className="slider-container col-md-12 story-time row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+      <div className="slider-container col-md-12 story-time row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
         {storyData.map((item, index) => (
           <div
             key={item.id}

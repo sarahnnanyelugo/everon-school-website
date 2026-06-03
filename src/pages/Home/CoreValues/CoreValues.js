@@ -51,7 +51,7 @@ export const CoreValues = () => {
         <hr />
         <div
           ref={headingRef}
-          className="d-md-flex value-item"
+          className="d-flex value-item"
           style={{
             // width: "100%",
             transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
@@ -59,19 +59,19 @@ export const CoreValues = () => {
             transition: "transform 2s ease, opacity 2s ease",
           }}
         >
-          <div className="col-md-3 ">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-4">
             <h2>CULTURE OF SCHOLARSHIP</h2>
           </div>
-          <div className="col-md-4">
-            <p>At Everon,scholarship is not confined to the classroom</p>
+          <div className="col-md-4 col-5">
+            <p>At Everon, scholarship is not confined to the classroom</p>
           </div>
         </div>
         <hr />
         <div
-          className="d-md-flex value-item"
+          className="d-flex value-item"
           // ref={headingRef}
           // style={{
           //   width: "100%",
@@ -81,63 +81,63 @@ export const CoreValues = () => {
           //   transition: "transform 2s ease, opacity 2s ease",
           // }}
         >
-          <div className="col-md-4">
+          <div className="col-md-4 col-5">
             <h2>INNOVATIVE CURRICULUM</h2>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-4">
             <p>At Everon,scholarship is not confined to the classroom</p>
           </div>{" "}
-          <div className="col-md-3 ">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
         </div>
         <hr />
-        <div className="d-md-flex value-item">
-          <div className="col-md-3 ">
+        <div className="d-flex value-item">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-4">
             <h2>
               GIVING <br /> BACK
             </h2>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-5">
             <p>At Everon,scholarship is not confined to the classroom</p>
           </div>
         </div>
         <hr />
-        <div className="d-md-flex value-item">
-          <div className="col-md-4">
+        <div className="d-flex value-item">
+          <div className="col-md-4 col-4">
             <h2>HOLISTIC DEVELOPMENT</h2>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-5">
             <p>At Everon,scholarship is not confined to the classroom</p>
           </div>{" "}
-          <div className="col-md-3 ">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
         </div>
         <hr />
-        <div className="d-md-flex value-item">
-          <div className="col-md-3 ">
+        <div className="d-flex value-item">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-4">
             <h2>RESEARCH-LED LEARNING</h2>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-5">
             <p>At Everon,scholarship is not confined to the classroom</p>
           </div>
         </div>
         <hr />
-        <div className="d-md-flex value-item">
-          <div className="col-md-4">
+        <div className="d-flex value-item">
+          <div className="col-md-4 col-4">
             <h2>GOD CENTERED</h2>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-5">
             <p>At Everon,scholarship is not confined to the classroom</p>
           </div>{" "}
-          <div className="col-md-3 ">
+          <div className="col-md-3 col-3">
             <img src={Primary} alt="Avatar" width="90%" />
           </div>
         </div>

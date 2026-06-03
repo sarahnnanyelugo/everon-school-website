@@ -171,7 +171,7 @@ export const Home = () => {
           <h1 className="offset-md-2">WHO WE ARE</h1>
 
           <div
-            className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 col-md-12"
+            className="row row-cols-1 row-cols-lg-5 g-2 g-lg-3 col-md-12"
             style={{
               transform: inViewParagraph
                 ? "translateY(0)"

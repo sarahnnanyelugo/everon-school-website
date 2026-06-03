@@ -28,9 +28,9 @@ export const MissionStatement = () => {
       <div className="mission-div" ref={textRef}>
         {" "}
         <center>
-          <div className="col-md-7 ">
+          <div className="col-md-7 col-12">
             {" "}
-            <img src={Logo} alt="Avatar" className="" />
+            <img src={Logo} alt="Avatar" className="" width="100%" />
           </div>
         </center>
         <div class="overlay">

@@ -11,6 +11,9 @@
     color: #fff;
     border: none;
     margin-top: 70px;
+    @media screen and (max-width: 820px) {
+      margin-top: 10px;
+    }
   }
 }
 .offcanvas {
