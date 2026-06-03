@@ -1,0 +1,60 @@
+@import "../../variables";
+
+footer {
+  background: $mainColor;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  color: #fff;
+  .first-prt {
+    padding-right: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+  span {
+    color: $highlight;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .rule {
+    // height: 400px;
+    border: dashed 2px #fff;
+  }
+  .second-wing {
+    padding-left: 30px;
+    h1 {
+      font-size: 100px;
+      line-height: 90px;
+      margin-bottom: 40px;
+    }
+    .link-btns {
+      margin: 0px 10px;
+      border: solid 2px #fff;
+      padding: 20px 30px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 35px;
+      font-weight: bold;
+      transition: 0.5s ease;
+      &:hover {
+        background: #fff;
+        color: $mainColor;
+      }
+    }
+
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.5s ease;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  h3 {
+    margin-top: 70px;
+  }
+}

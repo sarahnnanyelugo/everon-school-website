@@ -1,6 +1,6 @@
 import MainVid from "../../assets/images/home-vid.mp4";
-import React, { useEffect, useState } from "react";
-import Logo from "../../assets/images/logo2.jpeg";
+import React, { useEffect, useState, useRef } from "react";
+import Logo from "../../assets/images/logo3.png";
 import Queue from "../../assets/images/queue.jpg";
 import Primary from "../../assets/images/primary.jpg";
 import { Link } from "react-router-dom";
@@ -17,6 +17,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import "./home.scss";
 import PageLink from "./pageLink/PageLink";
 import News from "../../components/News/News";
+import { MissionStatement } from "./Mission/MissionStatement";
 const colors = [
   "rgba(0, 0, 0, 0.8)",
   "rgba(128, 128, 128, 0.9)",
@@ -28,6 +29,8 @@ export const Home = () => {
   const [bgColor, setBgColor] = useState(colors[0]);
   const [index, setIndex] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+  const [inViewParagraph, setInViewParagraph] = useState(false); // Track if the paragraph inside heading-container is in view
+  const paragraphRef = useRef(null); // Reference for the paragraph
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -70,6 +73,33 @@ export const Home = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [index]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // if (textRef.current) {
+      //   const rect = textRef.current.getBoundingClientRect();
+      //   const windowHeight = window.innerHeight;
+      //   if (rect.top <= windowHeight && rect.bottom >= 0) {
+      //     setInViewText(true);
+      //   } else {
+      //     setInViewText(false);
+      //   }
+      // }
+      if (paragraphRef.current) {
+        const rect = paragraphRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setInViewParagraph(true);
+        } else {
+          setInViewParagraph(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run once on load to check initial position
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <div className="home-page vid-home-div">
@@ -125,59 +155,56 @@ export const Home = () => {
           </div>
         </div>
 
-        <div class="mission-div">
-          <div className="col-md-6 offset-md-3">
+        <MissionStatement />
+        <div className="who-we-are " ref={paragraphRef}>
+          <h1 className="offset-md-2">WHO WE ARE</h1>
+
+          <div
+            className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 col-md-12"
+            style={{
+              transform: inViewParagraph
+                ? "translateY(0)"
+                : "translateY(100px)",
+              opacity: inViewParagraph ? 1 : 0,
+              transition: "transform 1s ease, opacity 1s ease",
+            }}
+          >
             {" "}
-            <img src={Logo} alt="Avatar" class="image" width="50%" />
-          </div>
-          <div class="overlay">
-            <div class="text">
-              <h1>
-                We Have One <span>Mission</span>
-                <p>
-                  School does not discriminate on the basis of race, color,
-                  religion, sex, gender, sexual orientation, national origin,
-                  ancestry, age, marital status
-                </p>
-              </h1>
+            <div className="col">
+              <PageLink
+                title="About Us"
+                img={Queue}
+                pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
+              />
+            </div>{" "}
+            <div className="col">
+              <PageLink
+                title="School Policies"
+                img={Queue}
+                pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
+              />
+            </div>{" "}
+            <div className="col">
+              <PageLink
+                title="Our History"
+                img={Queue}
+                pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
+              />
+            </div>{" "}
+            <div className="col">
+              <PageLink
+                title="Why Everon Schools?"
+                img={Queue}
+                pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
+              />
+            </div>{" "}
+            <div className="col">
+              <PageLink
+                title="Important Dates"
+                img={Queue}
+                pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
+              />
             </div>
-          </div>
-        </div>
-        <div className="who-we-are row row-cols-2 row-cols-lg-5 g-2 g-lg-3 col-md-12">
-          <div className="col">
-            <PageLink
-              title="About Us"
-              img={Queue}
-              pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
-            />
-          </div>{" "}
-          <div className="col">
-            <PageLink
-              title="About Us"
-              img={Queue}
-              pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
-            />
-          </div>{" "}
-          <div className="col">
-            <PageLink
-              title="About Us"
-              img={Queue}
-              pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
-            />
-          </div>{" "}
-          <div className="col">
-            <PageLink
-              title="About Us"
-              img={Queue}
-              pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
-            />
-          </div>{" "}
-          <div className="col">
-            <PageLink
-              title="About Us"
-              img={Queue}
-              pageSummary="When learning is fueled by each child’s innate creativity and capacity for wonder, education becomes a life-changing experience. Children who are encouraged to chart their own learning journeys as they explore the world around them grow into dynamic thinkers, creative collaborators, and motivated learners who follow "
-            />
           </div>
         </div>
       </div>
@@ -191,7 +218,9 @@ export const Home = () => {
             transition: "background-color 2s ease-in-out", // Slower fade transition
           }}
         >
-          <h1 className="offset-md-2">Our Entry Points</h1>
+          <h1 className="offset-md-2 entry">
+            Our En<span>try</span> Points
+          </h1>
           <div className="entry col-md-8 offset-md-2 d-md-flex row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
             <div className="level col">
               <div class="contained">
@@ -494,7 +523,17 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="stories-section"></div>
+          <center>
+            <div className="cta-section col-md-5">
+              <h1>
+                Are you ready to see how <span>your story</span> unfolds?
+              </h1>
+              <p>LET'S MAKE IT HAPPEN'</p>
+              <Link>Take a Tour</Link>
+              <Link>Contact Us</Link>
+              <Link>Apply</Link>
+            </div>
+          </center>
         </div>
       </div>
     </>

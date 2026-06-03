@@ -1,0 +1,49 @@
+@import "../../../variables";
+
+.mission-div {
+  position: relative;
+  margin-top: 160px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.5s ease;
+  background-color: rgba(1, 57, 116, 1);
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+
+    span {
+      font-family: polymath;
+      color: $secColor;
+      font-size: 50px;
+    }
+  }
+  p {
+    font-weight: bold;
+  }
+}

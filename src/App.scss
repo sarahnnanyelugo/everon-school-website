@@ -1,6 +1,5 @@
 @import "./variables";
 
-
 @font-face {
   font-family: freightR;
   src: url(./assets/fonts/freightMicro/FreightMicroProBold-Regular.ttf);
@@ -42,6 +41,6 @@ h5,
 h6 {
   font-family: polymath;
 }
-.highlight{
-  border-bottom:solid 2px $highlight
+.highlight {
+  border-bottom: solid 2px $highlight;
 }

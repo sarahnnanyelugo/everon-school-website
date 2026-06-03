@@ -5,7 +5,7 @@ const PageLink = (prop) => {
   return (
     <>
       <div className="page-link-div">
-        <h3>{prop.title}</h3>
+        <h5>{prop.title}</h5>
         <img src={prop.img} width="100%" />
         <p>{prop.pageSummary}</p>
         <Link to={"prop.pageUrl"}>Learn More</Link>

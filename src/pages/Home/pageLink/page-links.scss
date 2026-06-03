@@ -1,3 +1,5 @@
+@import "../../../variables";
+
 .page-link-div {
   height: 600px;
   border-top-right-radius: var(--x-coord) var(--y-coord);
@@ -6,4 +8,14 @@
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   background: white;
+  p {
+    margin-top: 20px;
+  }
+  h5 {
+    margin-left: 10px;
+    color: $mainColor;
+  }
+  a {
+    color: $secColor;
+  }
 }
