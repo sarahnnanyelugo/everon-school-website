@@ -2,13 +2,13 @@
 
 .mission-div {
   position: relative;
-  margin-top: 160px;
+  margin-top: 120px;
+  padding-top: 40px;
 }
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
+  // height: auto;
 }
 
 .overlay {
@@ -36,7 +36,7 @@
   h1 {
     margin-bottom: 30px;
     font-weight: bold;
-
+    padding-top: 280px;
     span {
       font-family: polymath;
       color: $secColor;

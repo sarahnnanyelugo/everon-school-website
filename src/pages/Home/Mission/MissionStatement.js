@@ -25,13 +25,16 @@ export const MissionStatement = () => {
   }, []);
   return (
     <>
-      <div class="mission-div" ref={textRef}>
-        <div className="col-md-6 offset-md-3">
-          {" "}
-          <img src={Logo} alt="Avatar" class="image" width="50%" />
-        </div>
+      <div className="mission-div" ref={textRef}>
+        {" "}
+        <center>
+          <div className="col-md-7 ">
+            {" "}
+            <img src={Logo} alt="Avatar" className="" />
+          </div>
+        </center>
         <div class="overlay">
-          <div class="text">
+          <div class="text col-md-6 ">
             <h1>
               We Have One <span>Mission</span>
               <p
@@ -42,7 +45,7 @@ export const MissionStatement = () => {
                     "background 0.5s ease, transform 2s ease, opacity 2s ease",
                 }}
               >
-                School does not discriminate on the basis of race, color,
+                School does not discriminate on the errrrasis of race, color,
                 religion, sex, gender, sexual orientation, national origin,
                 ancestry, age, marital status
               </p>

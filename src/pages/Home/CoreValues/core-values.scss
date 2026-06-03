@@ -1,0 +1,34 @@
+@import "../../../variables";
+
+.values {
+  margin-top: 150px;
+  color: #fff;
+  h1 {
+    color: #fff;
+    font-size: 60px;
+  }
+  .value-item {
+    padding: 0px 50px;
+    img {
+      height: 270px;
+      // object-fit: cover;
+      border-radius: 100%;
+    }
+    h2 {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 50px;
+      border-bottom: solid 10px $highlight;
+    }
+    p {
+      font-size: 25px;
+      margin-top: 40px;
+      padding: 30px;
+      font-family: freightMI;
+      font-weight: bold;
+    }
+  }
+  hr {
+    color: #fff;
+  }
+}

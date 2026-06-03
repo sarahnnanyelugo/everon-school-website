@@ -18,6 +18,10 @@ import "./home.scss";
 import PageLink from "./pageLink/PageLink";
 import News from "../../components/News/News";
 import { MissionStatement } from "./Mission/MissionStatement";
+import { CoreValues } from "./CoreValues/CoreValues";
+import { EntryPoint } from "./EntryPoint/EntryPoint";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 const colors = [
   "rgba(0, 0, 0, 0.8)",
   "rgba(128, 128, 128, 0.9)",
@@ -126,7 +130,9 @@ export const Home = () => {
         <div className="welcome-div">
           <div className="col-md-10 offset-md-1 d-md-flex">
             <div className="col-md-6">
-              <h1>Welcome to Everon School</h1>
+              <h1>
+                Wel<span>come</span> to Everon School
+              </h1>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
@@ -147,7 +153,12 @@ export const Home = () => {
                 accompanied by English versions from the 1914 translation by H.
                 Rackham.
               </p>
-              <Link to={"/"}>Read More</Link> <Link to={"/"}>Apply</Link>
+              <Link to={"/"}>
+                Read More <FaArrowRightLong />
+              </Link>{" "}
+              <Link to={"/"}>
+                Apply <FaArrowRightLong />
+              </Link>
             </div>
             <div className="col-md-5 offset-md-1">
               <img src={Queue} alt="Avatar" class="image" width="50%" />
@@ -222,153 +233,30 @@ export const Home = () => {
             Our En<span>try</span> Points
           </h1>
           <div className="entry col-md-8 offset-md-2 d-md-flex row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
-            <div className="level col">
-              <div class="contained">
-                <img src={Primary} alt="Avatar" class="image" />
-                <div class="overlayed">
-                  <div class="text">
-                    <h3>EYFS</h3>
-
-                    <p>
-                      School does not discriminate on the basis of race, color,
+            <EntryPoint
+              img={Primary}
+              level="EYFS"
+              summary=" School does not discriminate on the basis of race, color,
                       religion, sex, gender, sexual orientation, national
-                      origin, ancestry, age, marital status{" "}
-                      <Link>Learn More</Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="level col">
-              <div class="contained">
-                <img src={Primary} alt="Avatar" class="image" />
-                <div class="overlayed">
-                  <div class="text">
-                    <h3>PRIMARY</h3>
-
-                    <p>
-                      School does not discriminate on the basis of race, color,
+                      origin, ancestry, age, marital status"
+            />{" "}
+            <EntryPoint
+              img={Primary}
+              level="PRIMARY"
+              summary=" School does not discriminate on the basis of race, color,
                       religion, sex, gender, sexual orientation, national
-                      origin, ancestry, age, marital status{" "}
-                      <Link>Learn More</Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="level col">
-              <div class="contained">
-                <img src={Primary} alt="Avatar" class="image" />
-                <div class="overlayed">
-                  <div class="text">
-                    <h3>SECONDARY</h3>
-
-                    <p>
-                      School does not discriminate on the basis of race, color,
+                      origin, ancestry, age, marital status"
+            />{" "}
+            <EntryPoint
+              img={Primary}
+              level="SECONDARY"
+              summary=" School does not discriminate on the basis of race, color,
                       religion, sex, gender, sexual orientation, national
-                      origin, ancestry, age, marital status.
-                      <Link>Learn More</Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <div className="col-md-8 offset-md-2 values">
-            {" "}
-            <center>
-              <h1>
-                Our <span className="highlight">Core</span> Values
-              </h1>
-            </center>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-              <div className="col-md-4">
-                <h2>CULTURE OF SCHOLARSHIP</h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>
-            </div>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-4">
-                <h2>INNOVATIVE CURRICULUM</h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>{" "}
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-            </div>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-              <div className="col-md-4">
-                <h2>
-                  GIVING <br /> BACK
-                </h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>
-            </div>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-4">
-                <h2>HOLISTIC DEVELOPMENT</h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>{" "}
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-            </div>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-              <div className="col-md-4">
-                <h2>RESEARCH-LED LEARNING</h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>
-            </div>
-            <hr />
-            <div className="d-md-flex value-item">
-              <div className="col-md-4">
-                <h2>GOD CENTERED</h2>
-              </div>
-              <div className="col-md-4">
-                <p>At Everon,scholarship is not confined to the classroom</p>
-              </div>{" "}
-              <div className="col-md-3 ">
-                <img src={Primary} alt="Avatar" width="90%" />
-              </div>
-            </div>
-            <hr />
-          </div> */}
-
-          <div className="col-md-8 offset-md-2 story-section">
-            <center>
-              <h1>
-                Latest <span>Upda</span>tes
-              </h1>
-            </center>
-            <div className="testimonials">
-              <News />
-            </div>
+                      origin, ancestry, age, marital status"
+            />
           </div>
 
+          <CoreValues />
           <div className="stats-container">
             <div className="statistics-div"></div>
             <div className="stats-overlay">
@@ -497,9 +385,21 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="our-words">
             <OurWords />
           </div>
+          <div className="col-md-8 offset-md-2 story-section">
+            <center>
+              <h1>
+                Latest <span>Upda</span>tes
+              </h1>
+            </center>
+            <div className="testimonials">
+              <News />
+            </div>
+          </div>
+
           <div
             style={{ background: "#d4d6e3" }}
             className="social-media-div mobile-pad"
