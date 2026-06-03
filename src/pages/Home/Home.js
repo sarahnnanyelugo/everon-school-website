@@ -274,7 +274,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-8 offset-md-2 values">
+          {/* <div className="col-md-8 offset-md-2 values">
             {" "}
             <center>
               <h1>
@@ -356,7 +356,7 @@ export const Home = () => {
               </div>
             </div>
             <hr />
-          </div>
+          </div> */}
 
           <div className="col-md-8 offset-md-2 story-section">
             <center>
