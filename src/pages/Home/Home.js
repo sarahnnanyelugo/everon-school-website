@@ -4,7 +4,16 @@ import Logo from "../../assets/images/logo2.jpeg";
 import Queue from "../../assets/images/queue.jpg";
 import Primary from "../../assets/images/primary.jpg";
 import { Link } from "react-router-dom";
-
+import CountUp from "react-countup";
+import { OurWords } from "../../components/OurWords/OurWords";
+import FBSocials from "./FBSocials";
+import TwitterHandle from "./TwitterHandle/TwitterHandle";
+import YouTube from "./Youtube";
+import { MdGroups } from "react-icons/md";
+import { PiStudentBold } from "react-icons/pi";
+import { HiBuildingOffice2 } from "react-icons/hi2";
+import { TbRulerMeasure } from "react-icons/tb";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import "./home.scss";
 import PageLink from "./pageLink/PageLink";
 import News from "../../components/News/News";
@@ -239,7 +248,9 @@ export const Home = () => {
           <div className="col-md-8 offset-md-2 values">
             {" "}
             <center>
-              <h1>DIFFERENTLY.</h1>
+              <h1>
+                Our <span className="highlight">Core</span> Values
+              </h1>
             </center>
             <hr />
             <div className="d-md-flex value-item">
@@ -318,14 +329,172 @@ export const Home = () => {
             <hr />
           </div>
 
-          <div className="col-md-8 offset-md-2 ">
+          <div className="col-md-8 offset-md-2 story-section">
+            <center>
+              <h1>
+                Latest <span>Upda</span>tes
+              </h1>
+            </center>
             <div className="testimonials">
-              <center>
-                <h2>Latest Updates</h2>
-              </center>
               <News />
             </div>
           </div>
+
+          <div className="stats-container">
+            <div className="statistics-div"></div>
+            <div className="stats-overlay">
+              <center>
+                <h2>At a Glance</h2>
+              </center>
+              <div className="col-md-12 offset-md row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div className="col">
+                  <center>
+                    <div className=" stats">
+                      <span className="icon">
+                        {" "}
+                        <MdGroups />
+                      </span>
+
+                      <h1>
+                        <CountUp
+                          start={0}
+                          end={10}
+                          duration={2}
+                          decimal=""
+                          prefix=" "
+                          suffix="+"
+                          enableScrollSpy={true}
+                        />
+                      </h1>
+                      <p>School Clubs</p>
+                    </div>{" "}
+                  </center>
+                </div>{" "}
+                <div className="col">
+                  <center>
+                    <div className=" stats">
+                      <span className="icon">
+                        <PiStudentBold />
+                      </span>
+                      <h1>
+                        <CountUp
+                          start={0}
+                          end={5000}
+                          duration={2}
+                          decimal=""
+                          prefix=" "
+                          suffix="+"
+                          enableScrollSpy={true}
+                        />
+                      </h1>
+                      <p>Students </p>
+                    </div>
+                  </center>
+                </div>
+                <div className="col">
+                  <center>
+                    <div className=" stats">
+                      <span className="icon">
+                        <TbRulerMeasure />
+                      </span>
+                      <h1>
+                        {" "}
+                        <CountUp
+                          start={0}
+                          end={10}
+                          duration={2}
+                          decimal=""
+                          prefix=" "
+                          suffix=":1"
+                          enableScrollSpy={true}
+                        />
+                      </h1>
+                      <p>Student-Teacher Ratio</p>
+                    </div>
+                  </center>
+                </div>{" "}
+                <div className="col">
+                  <center>
+                    <div className=" stats">
+                      <span className="icon">
+                        <HiBuildingOffice2 />
+                      </span>
+                      <h1>
+                        {" "}
+                        <CountUp
+                          start={0}
+                          end={15}
+                          duration={2}
+                          decimal=""
+                          prefix=" "
+                          suffix="+"
+                          enableScrollSpy={true}
+                        />
+                      </h1>
+                      <p>School Facilities</p>
+                    </div>
+                  </center>
+                </div>
+                <div className="col">
+                  <center>
+                    <div className="stats">
+                      <span className="icon">
+                        <FaChalkboardTeacher />
+                      </span>
+                      <h1>
+                        {" "}
+                        <CountUp
+                          start={0}
+                          end={50}
+                          duration={2}
+                          decimal=""
+                          prefix=" "
+                          suffix="+"
+                          enableScrollSpy={true}
+                        />
+                      </h1>
+                      <p>Staff Members</p>
+                    </div>{" "}
+                  </center>
+                </div>
+              </div>
+              <div className="d-flex col-md-10 offset-md-1 see-div">
+                <h6>See for yourself</h6>
+                <div className="col-md-8 col-0">
+                  <hr />
+                </div>
+                <button>INQUIRE</button>
+                <button>TAKE A TOUR</button>
+              </div>
+            </div>
+          </div>
+          <div className="our-words">
+            <OurWords />
+          </div>
+          <div
+            style={{ background: "#d4d6e3" }}
+            className="social-media-div mobile-pad"
+          >
+            <center>
+              {" "}
+              <h1>
+                Our Social <span>Media Pages</span>
+              </h1>
+            </center>
+            <div className="col-md-10 offset-md-1 d-md-flex">
+              <div className="col-md-4">
+                <FBSocials />
+              </div>
+              <div className="col-md-4">
+                <TwitterHandle />
+              </div>{" "}
+              <div className="col-md-4">
+                <YouTube />
+              </div>
+            </div>
+          </div>
+
+          <div className="stories-section"></div>
         </div>
       </div>
     </>
