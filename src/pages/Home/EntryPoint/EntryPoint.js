@@ -35,7 +35,7 @@ export const EntryPoint = (props) => {
             "background 0.5s ease, transform 2s ease, opacity 2s ease",
         }}
       >
-        <div class="contained">
+        <div class="contained entry-point">
           <img src={props.img} alt="Avatar" className="image" width="100%" />
           <div class="overlayed">
             <div class="text">

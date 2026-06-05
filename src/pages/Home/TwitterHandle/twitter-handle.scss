@@ -9,6 +9,10 @@
   padding: 20px !important;
   background: #030000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #fff;
+  min-height: 550px;
 }
 .twitter {
   @media screen and (min-width: 820px) {

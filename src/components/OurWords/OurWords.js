@@ -42,7 +42,7 @@ export const OurWords = () => {
   return (
     <>
       {" "}
-      <div className="mission-words d-md-flex col-md-12">
+      <div className="mission-words d-md-flex col-md-12 ">
         <div className="col-md-7">
           <div className="void" id="void">
             <div className="crop">

@@ -222,7 +222,7 @@ export const Home = () => {
             Our En<span>try</span> Points
           </h1>
 
-          <div className="entry col-md-8 offset-md-2 d-md-flex row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+          <div className="entry col-md-8 offset-md-2 d-md-flex row row-cols-1 row-cols-lg-3 g-2 g-lg-3 mobile-pad">
             <EntryPoint
               img={Primary}
               level="EYFS"
@@ -247,7 +247,7 @@ export const Home = () => {
           </div>
 
           <CoreValues />
-          <div className="stats-container">
+          <div className="stats-container mobile-pad">
             <div className="statistics-div"></div>
             <div className="stats-overlay">
               <center>
@@ -375,7 +375,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="our-words">
+          <div className="our-words ">
             <OurWords />
           </div>
           <div className="col-md-8 offset-md-2 story-section">
