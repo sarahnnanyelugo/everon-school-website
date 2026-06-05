@@ -36,29 +36,32 @@ const TwitterHandle = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div ref={paragraphRef}>
-      {" "}
-      <div
-        className="ig-social twitter"
-        style={{
-          transform: inViewParagraph ? "translateY(0)" : "translateY(100px)",
-          opacity: inViewParagraph ? 1 : 0,
-          transition: "transform 1s ease, opacity 1s ease",
-        }}
-      >
+    <>
+      <div ref={paragraphRef}>
         {" "}
-        <div className="instagram-embed col-md-12">
-          {IgPosts.map((post) => (
-            <blockquote
-              key={post.id}
-              className="instagram-media"
-              data-instgrm-permalink={post.url}
-              data-instgrm-version="14"
-            ></blockquote>
-          ))}
+        <div
+          className="ig-social twitter col-md-12 col-12"
+          style={{
+            width: "100%",
+            transform: inViewParagraph ? "translateY(0)" : "translateY(100px)",
+            opacity: inViewParagraph ? 1 : 0,
+            transition: "transform 1s ease, opacity 1s ease",
+          }}
+        >
+          {" "}
+          <div className="instagram-embed ">
+            {IgPosts.map((post) => (
+              <blockquote
+                key={post.id}
+                className="instagram-media"
+                data-instgrm-permalink={post.url}
+                data-instgrm-version="14"
+              ></blockquote>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

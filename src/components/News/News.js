@@ -2,7 +2,11 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import React, { useState } from "react";
 import "./news.scss";
-import { storyData, transforms } from "../../TestData/storyData";
+import {
+  storyData,
+  transforms,
+  mobileTransforms,
+} from "../../TestData/storyData";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function NewsItem({ show, onHide, item }) {
@@ -40,6 +44,8 @@ function NewsItem({ show, onHide, item }) {
 function News() {
   const [modalShow, setModalShow] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const transformsToUse =
+    window.innerWidth <= 768 ? mobileTransforms : transforms;
 
   const handleShowModal = (item) => {
     setSelectedItem(item);
@@ -54,8 +60,12 @@ function News() {
           <div
             key={item.id}
             onClick={() => handleShowModal(item)}
+            // style={{
+            //   transform: transforms[index % transforms.length],
+            // }}
+
             style={{
-              transform: transforms[index % transforms.length],
+              transform: transformsToUse[index % transformsToUse.length],
             }}
           >
             <div className="card">

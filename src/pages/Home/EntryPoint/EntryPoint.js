@@ -36,7 +36,7 @@ export const EntryPoint = (props) => {
         }}
       >
         <div class="contained">
-          <img src={props.img} alt="Avatar" class="image" />
+          <img src={props.img} alt="Avatar" className="image" width="100%" />
           <div class="overlayed">
             <div class="text">
               <h3>{props.level}</h3>

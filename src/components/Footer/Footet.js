@@ -41,7 +41,7 @@ const Footer = () => {
               <span>
                 <IoMdMail />
               </span>
-              everonschools@gmail.com
+              evaronschools@gmail.com
             </p>
           </div>
           <div className="rule" />

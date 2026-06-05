@@ -36,20 +36,20 @@ export const MissionStatement = () => {
         <div class="overlay">
           <div class="text col-md-6 ">
             <h1>
-              We Have One <span>Mission</span>
-              <p
-                style={{
-                  transform: inViewText ? "scale(1)" : "scale(0.1)",
-                  opacity: inViewText ? 1 : 0,
-                  transition:
-                    "background 0.5s ease, transform 2s ease, opacity 2s ease",
-                }}
-              >
-                School does not discriminate on the errrrasis of race, color,
-                religion, sex, gender, sexual orientation, national origin,
-                ancestry, age, marital status
-              </p>
+              We Have One <span>Mission</span>{" "}
             </h1>
+            <p
+              style={{
+                transform: inViewText ? "scale(1)" : "scale(0.1)",
+                opacity: inViewText ? 1 : 0,
+                transition:
+                  "background 0.5s ease, transform 2s ease, opacity 2s ease",
+              }}
+            >
+              School does not discriminate on the errrrasis of race, color,
+              religion, sex, gender, sexual orientation, national origin,
+              ancestry, age, marital status
+            </p>
           </div>
         </div>
       </div>

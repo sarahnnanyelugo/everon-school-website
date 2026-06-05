@@ -37,10 +37,10 @@ const FBSocials = () => {
   }, []);
 
   return (
-    <div ref={headingRef}>
+    <div ref={headingRef} className="">
       {" "}
       <div
-        className="ig-social"
+        className="ig-social "
         style={{
           width: "100%",
           transform: inViewHeading ? "translateX(0)" : "translateX(-100px)",
@@ -49,7 +49,7 @@ const FBSocials = () => {
         }}
       >
         <div
-          className="fb-page"
+          className="fb-page col-md-12"
           data-href="https://www.facebook.com/britishspringawka"
           data-tabs="timeline"
           data-height=""

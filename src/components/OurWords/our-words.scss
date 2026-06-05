@@ -58,7 +58,8 @@
     height: 100px;
     gap: 8px;
     background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1),
+    box-shadow:
+      0px 4px 12px rgba(0, 0, 0, 0.1),
       0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     font-style: normal;
@@ -173,7 +174,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background: #ffffff;
-    box-shadow: 0px 18px 36px -18px rgba(222, 124, 13, 0.3),
+    box-shadow:
+      0px 18px 36px -18px rgba(222, 124, 13, 0.3),
       0px 30px 60px -12px rgba(222, 124, 13, 0.25);
     border-radius: 50%;
 
@@ -202,7 +204,8 @@
     transform: translate(-50%, -50%);
     background: #f5f4fe;
     opacity: 0.5;
-    box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
+    box-shadow:
+      0px 18px 36px -18px rgba(12, 5, 46, 0.3),
       0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
 
@@ -221,7 +224,8 @@
     transform: translate(-50%, -50%);
     background: #f5f4fe;
     opacity: 0.25;
-    box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
+    box-shadow:
+      0px 18px 36px -18px rgba(12, 5, 46, 0.3),
       0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
 
@@ -232,11 +236,13 @@
   }
 
   .crop {
-    -webkit-mask-image: linear-gradient(90deg,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 1) 50%,
-        rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 1)
+    );
   }
 
   .mask {
@@ -248,23 +254,25 @@
     animation: pulseGlow 5s linear infinite alternate;
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    background-image: radial-gradient(100% 50% at 100% 50%,
-        rgba(60, 26, 229, 0.25) 0%,
-        rgba(60, 26, 229, 0.247904) 11.79%,
-        rgba(59, 26, 229, 0.241896) 21.38%,
-        rgba(58, 26, 229, 0.2324) 29.12%,
-        rgba(57, 26, 229, 0.219837) 35.34%,
-        rgba(55, 26, 229, 0.20463) 40.37%,
-        rgba(53, 26, 229, 0.1872) 44.56%,
-        rgba(51, 26, 229, 0.16797) 48.24%,
-        rgba(48, 26, 229, 0.147363) 51.76%,
-        rgba(46, 26, 229, 0.1258) 55.44%,
-        rgba(44, 26, 229, 0.103704) 59.63%,
-        rgba(41, 26, 229, 0.0814963) 64.66%,
-        rgba(39, 26, 229, 0.0596) 70.88%,
-        rgba(36, 26, 229, 0.038437) 78.62%,
-        rgba(34, 26, 229, 0.0184296) 88.21%,
-        rgba(32, 26, 229, 0) 100%);
+    background-image: radial-gradient(
+      100% 50% at 100% 50%,
+      rgba(60, 26, 229, 0.25) 0%,
+      rgba(60, 26, 229, 0.247904) 11.79%,
+      rgba(59, 26, 229, 0.241896) 21.38%,
+      rgba(58, 26, 229, 0.2324) 29.12%,
+      rgba(57, 26, 229, 0.219837) 35.34%,
+      rgba(55, 26, 229, 0.20463) 40.37%,
+      rgba(53, 26, 229, 0.1872) 44.56%,
+      rgba(51, 26, 229, 0.16797) 48.24%,
+      rgba(48, 26, 229, 0.147363) 51.76%,
+      rgba(46, 26, 229, 0.1258) 55.44%,
+      rgba(44, 26, 229, 0.103704) 59.63%,
+      rgba(41, 26, 229, 0.0814963) 64.66%,
+      rgba(39, 26, 229, 0.0596) 70.88%,
+      rgba(36, 26, 229, 0.038437) 78.62%,
+      rgba(34, 26, 229, 0.0184296) 88.21%,
+      rgba(32, 26, 229, 0) 100%
+    );
 
     @media screen and (max-width: 820px) {
       width: 20%;
@@ -278,10 +286,12 @@
     height: 100%;
     right: 0;
     display: block;
-    background-image: linear-gradient(180deg,
-        rgba(60, 26, 229, 0) 0%,
-        #3c1ae5 50%,
-        rgba(60, 26, 229, 0) 100%);
+    background-image: linear-gradient(
+      180deg,
+      rgba(60, 26, 229, 0) 0%,
+      #3c1ae5 50%,
+      rgba(60, 26, 229, 0) 100%
+    );
   }
 
   .honour-div {

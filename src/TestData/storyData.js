@@ -43,3 +43,8 @@ export const storyData = [
   },
 ];
 export const transforms = ["rotate(-20deg)", "rotate(0deg);", "rotate(30deg)"];
+export const mobileTransforms = [
+  "rotate(-9deg)",
+  "rotate(0deg)",
+  "rotate(9deg)",
+];

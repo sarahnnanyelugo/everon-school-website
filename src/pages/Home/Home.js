@@ -80,15 +80,6 @@ export const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // if (textRef.current) {
-      //   const rect = textRef.current.getBoundingClientRect();
-      //   const windowHeight = window.innerHeight;
-      //   if (rect.top <= windowHeight && rect.bottom >= 0) {
-      //     setInViewText(true);
-      //   } else {
-      //     setInViewText(false);
-      //   }
-      // }
       if (paragraphRef.current) {
         const rect = paragraphRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -120,7 +111,6 @@ export const Home = () => {
           />
         </section>
 
-        {/* REAL ELEMENT */}
         <section className={`mission-section ${scrolled ? "slide-down" : ""}`}>
           <h1>
             A SCHOOL <br />
@@ -131,7 +121,7 @@ export const Home = () => {
           <div className="col-md-10 offset-md-1 d-md-flex">
             <div className="col-md-6">
               <h1>
-                Wel<span>come</span> to Everon School
+                Wel<span>come</span> to Evaron School
               </h1>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
@@ -161,7 +151,7 @@ export const Home = () => {
               </Link>
             </div>
             <div className="col-md-5 offset-md-1">
-              <img src={Queue} alt="Avatar" class="image" width="50%" />
+              <img src={Queue} alt="Avatar" class="" width="100%" />
             </div>
           </div>
         </div>
@@ -219,7 +209,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="rest-of-the-contents ">
         <div
           className="contents h-screen"
@@ -232,6 +221,7 @@ export const Home = () => {
           <h1 className="offset-md-2 entry">
             Our En<span>try</span> Points
           </h1>
+
           <div className="entry col-md-8 offset-md-2 d-md-flex row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
             <EntryPoint
               img={Primary}
@@ -385,7 +375,6 @@ export const Home = () => {
               </div>
             </div>
           </div>
-
           <div className="our-words">
             <OurWords />
           </div>
@@ -399,7 +388,6 @@ export const Home = () => {
               <News />
             </div>
           </div>
-
           <div
             style={{ background: "#d4d6e3" }}
             className="social-media-div mobile-pad"
@@ -410,19 +398,18 @@ export const Home = () => {
                 Our Social <span>Media Pages</span>
               </h1>
             </center>
-            <div className="col-md-10 offset-md-1 d-md-flex">
-              <div className="col-md-4">
+            <div className="col-md-10 offset-md-1 row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+              <div className="col">
                 <FBSocials />
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <TwitterHandle />
               </div>{" "}
-              <div className="col-md-4">
+              <div className="col">
                 <YouTube />
               </div>
             </div>
           </div>
-
           <center>
             <div className="cta-section col-md-5">
               <h1>
