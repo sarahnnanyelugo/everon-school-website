@@ -7,7 +7,7 @@ export const menuData = [
     title: "About",
     path: "/about",
     submenu: [
-      { title: "Our Story", path: "/about/story" },
+      { title: "About Us", path: "about" },
       { title: "Mission & Vision", path: "/about/mission" },
       { title: "History", path: "/about/staff" },
       { title: "Our Facilities", path: "/about/staff" },

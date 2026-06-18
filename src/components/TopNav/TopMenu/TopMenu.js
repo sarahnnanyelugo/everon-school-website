@@ -49,7 +49,7 @@ function TopMenu() {
                       {item.submenu && (
                         <ul className="submenu">
                           {item.submenu.map((sub, i) => (
-                            <li key={i}>
+                            <li key={i} onClick={handleClose}>
                               <Link to={sub.path}>{sub.title}</Link>
                             </li>
                           ))}
