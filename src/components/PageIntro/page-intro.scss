@@ -12,6 +12,11 @@
   z-index: 5;
   margin-top: 30px;
   margin-bottom: 80px;
+  span {
+    color: $secColor;
+    margin-right: 4px;
+    font-size: 22px;
+  }
   .menu {
     list-style: none;
     padding: 0;
@@ -85,6 +90,8 @@
   }
   span {
     font-size: 25px;
+    color: $secColor;
+    margin-right: 5px;
   }
   .accordion-button::after {
     display: none;
